@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Krishnakumar046.github.io/Finalnikeclone",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "bootstrap": "^5.3.3",
@@ -7,5 +8,10 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "serve": "vite preview",
+    "deploy": "gh-pages -d dist"
   }
 }
