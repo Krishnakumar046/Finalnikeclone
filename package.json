@@ -1,5 +1,9 @@
 {
   "homepage": "https://Krishnakumar046.github.io/Finalnikeclone",
+  "name": "my-vite-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "bootstrap": "^5.3.3",
@@ -10,8 +14,12 @@
     "gh-pages": "^6.1.1"
   },
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
     "predeploy": "npm run build",
     "serve": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   }
 }
